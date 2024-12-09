@@ -2,9 +2,8 @@ from openai import AzureOpenAI
 from flask import Flask, request, jsonify
 
 client = AzureOpenAI(
-    azure_endpoint='https://azure00.openai.azure.com/',
-    api_version='2023-07-01-preview',
-    api_key='b0aa353afad74497a56a318512400391'
+    azure_endpoint='https://infiniachat.openai.azure.com/',
+    api_key='Ewqw6MzpvwzqK8D1RSKDof3NWZ06JKUGb8i1RarWescEHPtVv8MwJQQJ99ALACBsN54XJ3w3AAABACOGQatg'
 )
 
 app = Flask(__name__)
