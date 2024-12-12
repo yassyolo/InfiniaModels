@@ -62,10 +62,10 @@ def ask():
             return jsonify({"response": predefined_answer})
 
         response = client.completions.create(
+            model="text-davinci-003",
             prompt=user_message,
             max_tokens=100,
-            temperature=0.7,
-            engine="text-davinci-003"
+            temperature=0.7
         )
 
         return jsonify({"response": response.choices[0].text.strip()})
