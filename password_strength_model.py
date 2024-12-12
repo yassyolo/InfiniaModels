@@ -82,7 +82,6 @@ random_search.fit(X_train, y_train)
 best_model = random_search.best_estimator_
 print("Best Hyperparameters:", random_search.best_params_)
 
-# Step 6: Final Training and Testing
 best_model.fit(X_train, y_train)
 y_pred = best_model.predict(X_test)
 
@@ -95,7 +94,6 @@ print(confusion_matrix(y_test, y_pred))
 print("\nAccuracy Score:")
 print(accuracy_score(y_test, y_pred))
 
-# Balanced Accuracy Score
 balanced_accuracy = balanced_accuracy_score(y_test, y_pred)
 print("\nBalanced Accuracy Score:", balanced_accuracy)
 

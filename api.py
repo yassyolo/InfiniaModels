@@ -9,12 +9,12 @@ import os
 
 app = Flask(__name__)
 
-api_key = os.getenv('AZURE_API_KEY')
+
 
 client = AzureOpenAI(
     azure_endpoint='https://infiniachat.openai.azure.com/',
     api_version='2023-07-01-preview',
-    api_key=api_key
+    api_key='Ewqw6MzpvwzqK8D1RSKDof3NWZ06JKUGb8i1RarWescEHPtVv8MwJQQJ99ALACBsN54XJ3w3AAABACOGQatg'
 )
 
 predefined_questions = {
